@@ -23,7 +23,7 @@ SFW_STRINGS = (
     "I'm a good girl, I don't abuse. But you're a bitch."
   )
 
-@run_async
+@Dispatcher.run_async
 def dark(bot: Bot, update: Update):
     bot.sendChatAction(update.effective_chat.id, "typing") # Bot typing before send messages
     message = update.effective_message
